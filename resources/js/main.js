@@ -1,12 +1,12 @@
 ﻿window.addEventListener('DOMContentLoaded', function () {
 
-	var stylings = document.getElementsByClassName('styling');
+	var copyUrls = document.getElementsByClassName('copy-url');
 
-	for (var i = 0; i < stylings.length; i++) {
-		stylings[i].addEventListener('click', async function (e) {
+	for (var i = 0; i < copyUrls.length; i++) {
+		copyUrls[i].addEventListener('click', async function (e) {
 			e.preventDefault();
 
-			var link = this.parentElement.href;
+			var link = this.getAttribute('link');
 			console.log(link);
 			try {
 				await navigator.clipboard.writeText(link);
