@@ -10,7 +10,7 @@
 			console.log(link);
 			try {
 				await navigator.clipboard.writeText(link);
-				alert("Copied the text: " + link);
+				alert("Copied the link: " + link);
 			} catch (err) {
 				console.error(err);
 			}
