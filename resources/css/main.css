@@ -59,6 +59,7 @@ img {
 #heading .copy-url {
 	width: 4rem;
 	height: 4rem;
+	cursor: pointer;
 	background-color: rgb(240, 240, 240);
 	border-radius: 50%;
 	display: flex;
