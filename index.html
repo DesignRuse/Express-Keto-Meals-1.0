@@ -108,6 +108,21 @@
 				</div>
 			</div>
 			<!-- 'Wrapper' ends -->
+			<script>
+				// Asynchronously load CSS
+				function loadCSS(href, id) {
+					var link = document.createElement('link');
+					link.href = href;
+					link.rel = 'stylesheet';
+					link.type = 'text/css';
+					link.media = 'all';
+					if (id) link.id = id;
+					document.head.appendChild(link);
+				}
+		
+				// Call the function to load your CSS file
+				loadCSS('resources/css/main.css');
+			</script>
 			<script defer type="text/javascript" src="resources/js/main.js"></script>
 		</body>
 	</html>
