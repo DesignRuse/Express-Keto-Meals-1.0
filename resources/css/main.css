@@ -22,10 +22,6 @@ body {
 	color: rgb(240, 240, 240);
 }
 
-ul {
-	list-style-type: none;
-}
-
 a:link,
 a:visited,
 a:hover,
@@ -36,8 +32,6 @@ a:active {
 img {
 	max-width: 100%;
 }
-
-:root {}
 
 #wrapper {
 	max-width: 120rem;
